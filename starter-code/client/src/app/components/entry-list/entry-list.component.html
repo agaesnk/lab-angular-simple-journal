@@ -1,0 +1,10 @@
+
+<div class="films-container">
+  <div class="film" *ngFor='let entry of journalEntries'>
+    <h2>{{entry.title}}</h2>
+    <p>{{entry.content}}</p>
+    <a [routerLink]="['/list', entry._id]">HELLO</a>
+  </div>
+
+</div>
+
